@@ -1,4 +1,4 @@
-hello mmap!rwxrwxr-x 3 ubuntu ubuntu 4096 Jan 15 07:00 .
+hello mmap!3 ubuntu ubuntu 4096 Jan 15 07:00 .
 drwxrwxr-x 4 ubuntu ubuntu 4096 Jan 13 12:37 ..
 -rw-rw-r-- 1 ubuntu ubuntu    0 Jan 15 07:00 .link.txt
 -rwxrwxr-x 1 ubuntu ubuntu 8528 Jan 12 14:01 atexittest

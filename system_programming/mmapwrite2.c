@@ -32,16 +32,17 @@ int main(int argc, const char* argv[]){
 		printf("Writing character %c at %zu\n", update[i], i);
 		map[i] = update[i];
 	}
-	
-	if (msync(map, fileInfo.st_size, MS_SYNC) == -1) {
-		perror("Could not sync the file to disk");
-	}
 
-	if (munmap(map, fileInfo.st_size) == -1) {
-		close(fd);
-		perror("Error un-mapping the file");
-		exit(EXIT_FAILURE);
-	}
+	// 동기 방식은 디폴트라 아래 소스는 필요 없음	
+//	if (msync(map, fileInfo.st_size, MS_SYNC) == -1) {
+//		perror("Could not sync the file to disk");
+//	}
+
+//	if (munmap(map, fileInfo.st_size) == -1) {
+//		close(fd);
+//		perror("Error un-mapping the file");
+//		exit(EXIT_FAILURE);
+//	}
 	
 	close(fd);
 	return 0;
